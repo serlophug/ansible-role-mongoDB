@@ -19,13 +19,12 @@ galaxy_info:
     - squeeze
     - wheezy
     
-  - name: Centos
-    versions:
-    - 6.5
 
   galaxy_tags: 
     - mongoDB
     - database
     - noSQL 
+    - centos6
+    - ubuntu
     
 dependencies: []
