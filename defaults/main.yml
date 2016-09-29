@@ -1,0 +1,5 @@
+---
+install_rcmdr: yes
+# i686 or x86_64	
+cpu_arch: x86_64
+    

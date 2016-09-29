@@ -1,0 +1,9 @@
+---
+- lineinfile: dest=/etc/yum.repos.d/mongodb-org-3.0.repo state=present create=yes line='[mongodb-org-3.0]\nname=MongoDB Repository\nbaseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.0/{{  cpu_arch  }}/\ngpgcheck=0\nenabled=1'
+
+- name: Install MongoDB 
+  yum: name=mongodb-org state=latest
+  
+- name: service mongod start
+  action: shell sudo service mongod start
+  ignore_errors: true
