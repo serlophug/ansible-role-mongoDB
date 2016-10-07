@@ -6,3 +6,5 @@
 - include: installRedHat.yml
   when: ansible_os_family == 'RedHat'
   
+- name: Restart service mongod 
+  service: name=mongod state=restarted  
