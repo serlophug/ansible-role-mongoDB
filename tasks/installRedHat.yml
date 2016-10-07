@@ -4,6 +4,3 @@
 - name: Install MongoDB 
   yum: name=mongodb-org state=latest
   
-- name: service mongod start
-  action: shell sudo service mongod start
-  ignore_errors: true
